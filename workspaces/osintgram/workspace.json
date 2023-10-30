@@ -1,7 +1,7 @@
 {
   "description": "OSINTGram",
   "docker_registry": "https://index.docker.io/v1/",
-  "name": "ceramicwhite/osintgram",
+  "name": "kasmweb/vs-code:develop",
   "image_src": "osintgram.png",
   "categories": [
     "OSINT"
