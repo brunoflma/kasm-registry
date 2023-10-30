@@ -1,0 +1,18 @@
+{
+  "description": "Osintgram.",
+  "docker_registry": "https://index.docker.io/v1/",
+  "name": "ceramicwhite/osintgram:latest",
+  "image_src": "osintgram.png",
+  "categories": [
+    "OSINT"
+  ],
+  "friendly_name": "OSINTGram",
+  "architecture": [
+    "amd64",
+    "arm64"
+  ],
+  "compatibility": [
+    "1.14.x"
+  ],
+  "uncompressed_size_mb": 2063
+}
