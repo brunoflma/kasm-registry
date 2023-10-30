@@ -1,7 +1,7 @@
 {
-  "description": "Osintgram.",
+  "description": "OSINTGram",
   "docker_registry": "https://index.docker.io/v1/",
-  "name": "ceramicwhite/osintgram:latest",
+  "name": "ceramicwhite/osintgram",
   "image_src": "osintgram.png",
   "categories": [
     "OSINT"
