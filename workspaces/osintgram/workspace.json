@@ -1,7 +1,7 @@
 {
   "description": "OSINTGram",
   "docker_registry": "https://index.docker.io/v1/",
-  "name": "posidron/osintgram:latest",
+  "name": "vinex22/osintgram:latest",
   "image_src": "osintgram.png",
   "categories": [
     "OSINT"
