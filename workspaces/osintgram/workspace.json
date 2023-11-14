@@ -1,15 +1,14 @@
 {
   "description": "OSINTGram",
   "docker_registry": "https://index.docker.io/v1/",
-  "name": "vinex22/osintgram:latest",
+  "name": "revkillj0y/ur-datalux_osintgram:latest",
   "image_src": "osintgram.png",
   "categories": [
     "OSINT"
   ],
   "friendly_name": "OSINTGram",
   "architecture": [
-    "amd64",
-    "arm64"
+    "amd64"
   ],
   "compatibility": [
     "1.13.x",
