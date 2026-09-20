@@ -1,3 +1,49 @@
+<img src="docs/cover.svg" width="100%" alt="Kasm Registry. Um catálogo pessoal de ambientes em containers.">
+
+# Kasm Personal Workspace
+
+**Um catálogo de workspaces para adicionar à sua instalação do Kasm.**
+
+Este repositório mantém as definições dos ambientes, os ícones e o site do registry. Ele usa a estrutura do template Kasm Workspaces Registry, com catálogo publicado no GitHub Pages.
+
+**[Abrir o catálogo ↗](https://brunoflma.github.io/kasm-registry/)** · [Definições dos workspaces](workspaces) · [Configuração do site](site/next.config.js) · [Problemas e sugestões](https://github.com/brunoflma/kasm-registry/issues)
+
+## O que há neste registry
+
+| Definição | Pasta |
+| :--- | :--- |
+| Chromium | [workspaces/Chromium](workspaces/Chromium) |
+| Osintgram | [workspaces/osintgram](workspaces/osintgram) |
+| RedeCNPJ | [workspaces/redecnpj](workspaces/redecnpj) |
+
+Cada pasta informa a imagem de container e os requisitos do ambiente. Confira arquitetura, compatibilidade e recursos no respectivo `workspace.json` antes de instalar.
+
+## Adicionar ao Kasm Workspaces
+
+1. Na sua instalação do Kasm, abra a área administrativa de registries de workspaces.
+2. Escolha a opção de adicionar um registry.
+3. Informe a URL abaixo, sem acrescentar o número da versão do schema:
+
+```text
+https://brunoflma.github.io/kasm-registry/
+```
+
+4. Atualize o catálogo e selecione o workspace desejado.
+
+## Manter o catálogo
+
+- **Workspaces:** uma pasta por ambiente em [workspaces](workspaces), com `workspace.json` e ícone.
+- **Apresentação e endereço:** configuração em [site/next.config.js](site/next.config.js).
+- **Publicação:** workflow [Build and deploy](.github/workflows/build-and-deploy.yml).
+- **Schema:** a branch padrão `1.0` representa a versão utilizada por este catálogo. O site usa `basePath: '/kasm-registry/1.0'`.
+
+As definições têm seu próprio histórico de manutenção e não representam uma garantia de atualização das imagens de terceiros. Verifique cada imagem no ambiente em que pretende utilizá-la.
+
+<details>
+<summary><strong>Manual original do template: configuração, schema e publicação</strong></summary>
+
+O manual abaixo foi preservado em inglês como referência técnica do template original.
+
 <h1 align="center">
   <br>
   <img width="150" src="https://user-images.githubusercontent.com/5698566/230345149-ef757e51-6eb9-479d-94f5-a13e4ad33b03.png">
@@ -29,7 +75,7 @@
    - [Folder structure](#folder-structure)
    - [Schema](#schema)
    - [New schema version](#new-schema-version)
-1. [Discovery](#6-dicovery)
+1. [Discovery](#6-discovery)
 
 
 &nbsp;
@@ -214,7 +260,7 @@ Don't forget to commit your changes!
 | description           | True     | String | A short description of the workspace                                                                 |
 | image_src             | True     | String | The name of the workspace icon used                                                                  |
 | architecture          | True     | Array | Json list containing either "amd64", "arm64" or both                                                 |
-| compatability         | True     | Array | A list of Kasm versions the workspace should work with                                               |
+| compatibility         | True     | Array | A list of Kasm versions the workspace should work with                                               |
 | uncompressed_size_mb  | True     | Integer | Integer of the approximate size of the workspace when it's uncompressed in MB. This doesn't take into account layers.  For example if an image is 2.46GB you would enter 2460 |
 | categories            | False    | Array | Json list containing the categories the workspace belongs too. This should be limited to a max of 3. |
 | docker_registry       | False    | String | Which docker registry to use                                                                         |
@@ -248,3 +294,7 @@ If you are the one doing the searching, click on the **site** folder, then click
 ![search-600](https://user-images.githubusercontent.com/5698566/230614274-2976b4d7-074f-4e6d-9e58-e4d2512a3d2a.gif)
 
 KASM-REGISTRY-DISCOVERY-IDENTIFIER
+
+</details>
+
+Catálogo mantido por [Bruno Ferreira](https://github.com/brunoflma).
